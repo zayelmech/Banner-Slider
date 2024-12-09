@@ -8,7 +8,9 @@
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:label="Banner Slider">
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:label="Banner Slider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
