@@ -30,11 +30,19 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.ss.bannerslider'
-            version = "2.0.2"
+            artifactId='bannerslider'
+            version = "2.0.0"
+            
+            artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+            
             pom {
                 description = 'Pre-released test'
             }
         }
+        
+    }
+    repositories {
+        mavenLocal()
     }
 }
 
