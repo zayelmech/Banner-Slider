@@ -29,8 +29,8 @@ dependencies {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.zayelmech'
-            version = "2.0.0"
+            groupId = 'com.ss.bannerslider'
+            version = "2.0.2"
             pom {
                 description = 'Pre-released test'
             }
