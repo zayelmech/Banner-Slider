@@ -8,7 +8,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 10
-        versionName "2.0.0"
+        versionName "2.0.5"
         group = 'com.ss.bannerslider'
         version = '2.0.0'
     }
@@ -32,7 +32,7 @@ afterEvaluate {
             maven(MavenPublication) {
                 groupId = 'com.ss.bannerslider'
                 artifactId = 'bannerslider'
-                version = "2.0.0"
+                version = "2.0.5"
 
                 pom {
                     description = 'Pre-released test'
