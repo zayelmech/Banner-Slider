@@ -17,6 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
@@ -26,7 +31,8 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            maven(MavenPublication) {
+            release(MavenPublication) {
+                from components.release
                 groupId = 'com.ss.bannerslider'
                 artifactId = 'bannerslider'
                 version = "2.0.5"
